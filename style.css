@@ -1,0 +1,471 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: linear-gradient(to left,rgb(244, 241, 247),rgb(68, 66, 199));
+   align-items: center;
+   font-family: sans-serif;
+   width: 100%;
+   height: 100vh;
+}
+
+h1 {
+   color: white;
+   text-decoration: underline;
+   margin-top: 400px;
+   margin-left: 60%;
+}
+
+
+.result {
+   position: absolute;
+   width: 295px;
+   left: 22px;
+   top: 100px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 60px;
+
+   color:rgb(141, 115, 115);
+   border: none;
+   outline: none;
+   background-color: #17181a;
+}
+
+.button-clear {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 41px;
+   top: 280px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-clear:hover {
+   background: #001aff;
+}
+
+.button-backspace {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 118px;
+   top: 280px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-backspace:hover {
+   background: #001aff;
+}
+
+.button-percent {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 196px;
+   top: 280px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-percent:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
+
+.button-divide {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 273px;
+   top: 280px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-divide:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
+
+.button-seven {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 41px;
+   top: 350px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #050505;
+}
+
+.button-seven:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-eight {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 118px;
+   top: 350px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #070707;
+}
+
+.button-eight:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-nine {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 196px;
+   top: 350px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #02030c;
+}
+
+.button-nine:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-multiply {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 273px;
+   top: 350px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-multiply:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
+
+.button-four {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 41px;
+   top: 420px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #050505;
+}
+
+.button-four:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-five {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 118px;
+   top: 420px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #00010c;
+}
+
+.button-five:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-six {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 196px;
+   top: 420px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #00010c;
+}
+
+.button-six:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-minus {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 273px;
+   top: 420px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-minus:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
+
+.button-one {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 41px;
+   top: 490px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #000108;
+}
+
+.button-one:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-two {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 118px;
+   top: 490px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #0a0a0a;
+}
+
+.button-two:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-three {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 196px;
+   top: 490px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #070707;
+}
+
+.button-three:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-plus {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 273px;
+   top: 490px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-plus:hover {
+   background: #333333;
+}
+
+.button-zero {
+   position: absolute;
+   width: 129px;
+   height: 55px;
+   left: 41px;
+   top: 560px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-zero:hover {
+   background: #001aff;
+   color: #f5f5f5;
+}
+
+.button-dot {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 196px;
+   top: 560px;
+
+   cursor: pointer;
+   background: #616161;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-dot:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
+
+.button-equal {
+   position: absolute;
+   width: 60px;
+   height: 55px;
+   left: 273px;
+   top: 560px;
+
+   cursor: pointer;
+   background: #001aff;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   object-position: center;
+   line-height: 57px;
+   text-align: center;
+   color: #f5f5f5;
+}
+
+.button-equal:hover {
+   background: #343435;
+   color: #f5f5f5;
+}
