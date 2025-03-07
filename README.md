@@ -1,0 +1,1 @@
+This is a simple and user-friendly calculator built using HTML, CSS, and JavaScript as part of the CodSoft internship/project. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. The design is clean, responsive, and easy to use on both desktop and mobile devices.
